@@ -54,14 +54,14 @@ def run_system_monolith():
         else:
             print("member not found")
 
-        elif opt == "4":
-        print("Analyzing...")
+        if opt == "4":
+            print("Analyzing...")
             count = 0
             
             for rank in r:
                 if rank == "Captain" or rank=="Commander": 
                     count = count + 1
-            print("High ranking officers: " +str(count) )
+            print("High ranking officers: " +str(count))
             
         elif opt == "5":
             print("Shutting down.")
