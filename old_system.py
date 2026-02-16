@@ -38,25 +38,30 @@ def run_system_monolith():
             
            
             n.append(new_name)
+            r.appened(new_rank)
+            p.append(new_div)
             print("Crew member added.")
             
         elif opt == "3":
             rem = input("Name to remove: ")
            
+         if rem in n:
+            
             idx = n.index(rem)
             n.pop(idx)
             r.pop(idx)
             d.pop(idx)
             print("Removed.")
-            
+        else print("member not found")
+
         elif opt == "4":
             print("Analyzing...")
             count = 0
             
             for rank in r:
-                if rank == "Captain" or "Commander": 
+                if rank == "Captain" or rank=="Commander": 
                     count = count + 1
-            print("High ranking officers: " + count) 
+            print("High ranking officers: " +str(count) )
             
         elif opt == "5":
             print("Shutting down.")
