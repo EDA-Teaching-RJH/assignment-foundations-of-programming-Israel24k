@@ -52,7 +52,8 @@ def run_system_monolith():
             r.pop(idx)
             d.pop(idx)
             print("Removed.")
-        else print("member not found")
+        else:
+            print("member not found")
 
         elif opt == "4":
             print("Analyzing...")
