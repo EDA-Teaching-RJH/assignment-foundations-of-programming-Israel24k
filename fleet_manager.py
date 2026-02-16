@@ -6,4 +6,5 @@ def init_database():
 
     return names,ranks,ids,divs
 
-def d
+def display_menu():
+    student = input("enteer your full name please")
