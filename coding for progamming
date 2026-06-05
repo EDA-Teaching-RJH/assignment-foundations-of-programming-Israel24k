@@ -25,6 +25,7 @@ void loop() {
     if (S2_State == HIGH && S3_State == HIGH) {
 
       BUTTON_COUNT = 0;
+      DigitalWrite(LED2,HIGH);
 
 
 
