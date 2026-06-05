@@ -7,4 +7,6 @@ int BUTTON_COUNT = 0;
 
 void setup() {
   PinMode(LED2,OUTPUT);
+  PinMode(LED3,OUTPUT);
+
 
