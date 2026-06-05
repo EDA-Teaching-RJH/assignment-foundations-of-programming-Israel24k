@@ -4,3 +4,6 @@ const int SW2 = 2;
 const int SW3 = 4;
 
 int BUTTON_COUNT = 0;
+
+void setup() {
+
