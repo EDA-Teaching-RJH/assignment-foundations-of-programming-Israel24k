@@ -31,6 +31,10 @@ else{
 
    DigitalWrite(LED2,LOW);
 
+  If (S2_State == HIGH)
+    BUTTON_COUNT++;
+   
+
 
 
 
