@@ -43,7 +43,10 @@ display.println(PotReading);
 
 display.setCursor(0, 30);
 display.print("Voltage: ");
-display.pint(POT_VOLTAGE);
+display.print(POT_VOLTAGE);
+display.println(" V");
 
+display.display()
+delay(100);
 
 }
