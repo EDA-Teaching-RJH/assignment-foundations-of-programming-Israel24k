@@ -33,6 +33,11 @@ else{
 
   If (S2_State == HIGH)
     BUTTON_COUNT++;
+
+  If (S3_State == HIGH)
+     BUTTON_COUNT--;
+
+}
    
 
 
