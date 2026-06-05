@@ -46,7 +46,7 @@ display.print("Voltage: ");
 display.print(POT_VOLTAGE);
 display.println(" V");
 
-display.display()
+display.display();
 delay(100);
 
 }
