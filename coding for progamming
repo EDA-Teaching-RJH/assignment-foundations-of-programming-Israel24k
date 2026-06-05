@@ -38,6 +38,8 @@ else{
      BUTTON_COUNT--;
 
 }
+
+Serial.print("Button Count = ");
    
 
 
