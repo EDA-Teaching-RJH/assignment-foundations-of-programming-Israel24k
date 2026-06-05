@@ -12,4 +12,7 @@ void setup() {
   PinMode(SW2,INPUT);
   PinMode(SW3,INPUT);
 
+ DigitalWrite(LED3,HIGH);
+
+
 
