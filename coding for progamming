@@ -14,5 +14,8 @@ void setup() {
 
  DigitalWrite(LED3,HIGH);
 
+ Serial.begin(9600);
+
+
 
 
