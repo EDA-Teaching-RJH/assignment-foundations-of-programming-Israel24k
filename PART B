@@ -28,5 +28,9 @@ void setup()
 
 void loop()
 {
- //put your other code here for TASK B
+
+int PotReading = AnalogReadd(POT_PIN);
+float POT_VOLTAGE = (PotReading * 5.0) / 1023.0;
+
+
 }
