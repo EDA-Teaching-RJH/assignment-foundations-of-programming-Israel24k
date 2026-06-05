@@ -33,7 +33,9 @@ int PotReading = AnalogReadd(POT_PIN);
 float POT_VOLTAGE = (PotReading * 5.0) / 1023.0;
 
 Serial.print("Potentiometer Reading = ");
-Serial.print(PotReading;
+Serial.print(PotReading);
+Serial.print("  Voltage = ");
+
 
 
 }
