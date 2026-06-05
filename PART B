@@ -11,20 +11,17 @@ const int POT_PIN =A0;
 void setup()
 {
  Serial.begin(9600);
+ PinMode(POT_PIN,INPUT);
 
- ////////////////////////////////////////////
- //put your code for pin assignments here...
- ////////////////////////////////////////////
  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C))
  {
  Serial.println("failed to access OLED...");
  for(;;);
  }
 
- delay(500);
- display.clearDisplay(); //clear display buffer
- display.setTextSize(1); //set text size
- display.setTextColor(WHITE); //set colour of font
+ display.clearDisplay();
+ display.setTextSize(1);
+ display.setTextColor(WHITE);
  display.setCursor(0, 10); //set cursor 0 pixels from left 10 pixels down from top
  // Display static text
  display.println("Hello, EENG4104!"); //print text to display
