@@ -1,1 +1,33 @@
+#include <Wire.h> //needed for I2C
+#include <Adafruit_GFX.h> //needed for OLED screen
+#include <Adafruit_SSD1306.h> //needed for OLED screen
+#define SCREEN_WIDTH 128 // OLED display width, in pixels
+#define SCREEN_HEIGHT 64 // OLED display height, in pixels
+// Declaration for an SSD1306 display connected to I2C (SDA, SCL pins)
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+void setup()
+{
+ Serial.begin(9600);
 
+ ////////////////////////////////////////////
+ //put your code for pin assignments here...
+ ////////////////////////////////////////////
+ if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C))
+ {
+ Serial.println("failed to access OLED...");
+ for(;;);
+ }
+
+ delay(500);
+ display.clearDisplay(); //clear display buffer
+ display.setTextSize(1); //set text size
+ display.setTextColor(WHITE); //set colour of font
+ display.setCursor(0, 10); //set cursor 0 pixels from left 10 pixels down from top
+ // Display static text
+ display.println("Hello, EENG4104!"); //print text to display
+ display.display(); //this needs to be called to actually update the OLED
+}
+void loop()
+{
+ //put your other code here for TASK B
+}
