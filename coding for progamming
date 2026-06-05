@@ -19,6 +19,7 @@ void setup() {
 }
 
 void loop() {
+    int S2_State = DigitslReas(SW2);
 
 
 
