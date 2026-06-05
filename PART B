@@ -42,6 +42,8 @@ display.print("ADC: ");
 display.println(PotReading);
 
 display.setCursor(0, 30);
+display.print("Voltage: ");
+display.pint(POT_VOLTAGE);
 
 
 }
