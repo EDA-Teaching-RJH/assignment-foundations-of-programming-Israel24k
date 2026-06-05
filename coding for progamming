@@ -10,5 +10,6 @@ void setup() {
   PinMode(LED3,OUTPUT);
 
   PinMode(SW2,INPUT);
+  PinMode(SW3,INPUT);
 
 
