@@ -38,7 +38,7 @@ Serial.print("  Voltage = ");
 Serial.println(POT_VOLTAGE);
 
 display.setCursor(0.10);
-
+display.print("ADC: ");
 
 
 }
