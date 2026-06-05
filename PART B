@@ -22,11 +22,10 @@ void setup()
  display.clearDisplay();
  display.setTextSize(1);
  display.setTextColor(WHITE);
- display.setCursor(0, 10); //set cursor 0 pixels from left 10 pixels down from top
- // Display static text
- display.println("Hello, EENG4104!"); //print text to display
- display.display(); //this needs to be called to actually update the OLED
+ display.display();
+
 }
+
 void loop()
 {
  //put your other code here for TASK B
