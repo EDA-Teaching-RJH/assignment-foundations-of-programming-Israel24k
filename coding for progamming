@@ -1,0 +1,6 @@
+const int LED2 = 5;
+const int LED3 = 3;
+const int SW2 = 2;
+const int SW3 = 4;
+
+int BUTTON_COUNT = 0;
