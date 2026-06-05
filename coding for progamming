@@ -6,4 +6,5 @@ const int SW3 = 4;
 int BUTTON_COUNT = 0;
 
 void setup() {
+  PinMode(LED2,OUTPUT);
 
