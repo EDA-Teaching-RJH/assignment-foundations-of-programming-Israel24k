@@ -6,47 +6,47 @@
 
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
-const int POT_PIN =A0;
+const int POT_PIN = A0;
 
 void setup()
 {
- Serial.begin(9600);
- PinMode(POT_PIN,INPUT);
+  Serial.begin(9600);
+  PinMode(POT_PIN,INPUT);
 
  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C))
  {
- Serial.println("failed to access OLED...");
- for(;;);
+     Serial.println("failed to access OLED...");
+     for(;;);
  }
 
- display.clearDisplay();
- display.setTextSize(1);
- display.setTextColor(WHITE);
- display.display();
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.display();
 
 }
 
 void loop()
 {
 
-int PotReading = AnalogReadd(POT_PIN);
-float POT_VOLTAGE = (PotReading * 5.0) / 1023.0;
+ int PotReading = AnalogRead(POT_PIN);
+ float POT_VOLTAGE = (PotReading * 5.0) / 1023.0;
 
-Serial.print("Potentiometer Reading = ");
-Serial.print(PotReading);
-Serial.print("  Voltage = ");
-Serial.println(POT_VOLTAGE);
+ Serial.print("Potentiometer Reading = ");
+ Serial.print(PotReading);
+ Serial.print("  Voltage = ");
+ Serial.println(POT_VOLTAGE);
 
-display.setCursor(0, 10);
-display.print("ADC: ");
-display.println(PotReading);
+ display.setCursor(0, 10);
+ display.print("ADC: ");
+ display.println(PotReading);
 
-display.setCursor(0, 30);
-display.print("Voltage: ");
-display.print(POT_VOLTAGE);
-display.println(" V");
+ display.setCursor(0, 30);
+ display.print("Voltage: ");
+ display.print(POT_VOLTAGE);
+ display.println(" V");
 
-display.display();
-delay(100);
+ display.display();
+ delay(100);
 
 }
