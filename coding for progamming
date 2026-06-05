@@ -26,6 +26,10 @@ void loop() {
 
       BUTTON_COUNT = 0;
       DigitalWrite(LED2,HIGH);
+}
+else{
+
+   DigitalWrite(LED2,LOW);
 
 
 
